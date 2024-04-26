@@ -1,4 +1,4 @@
-import {scrollToSection} from "./utils/scrollAnchor"
+import {scrollToSection} from "../../utils/scrollAnchor"
 
 function Presentation() {
 

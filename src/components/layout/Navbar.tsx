@@ -1,5 +1,5 @@
 import { MouseEvent, useEffect } from "react";
-import { scrollToSection } from "../utils/scrollAnchor";
+import { scrollToSection } from "../../../utils/scrollAnchor";
 
 function Navbar() {
 
