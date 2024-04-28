@@ -16,9 +16,12 @@ function Projects() {
                     {
                         projectsArray.map((item, index) => {
                             return <div className={"carousel-item  h-100 w-100 " + (index === 0 && "active")} key={index}>
-                                <div className="card mx-auto d-flex flex-column " style={{maxHeight: "650px", width: "fit-content", maxWidth:  "75%"}}>
-                                    <img className="card-img-top " src={item.image} alt="Card image cap" />
-                                    <div className="card-body d-flex flex-column gap-2 flex-shrink-1 overflow-hidden" >
+                                <div className="card mx-auto d-flex flex-column " style={{maxHeight: "695px", width: "fit-content", maxWidth:  "75%"}}>
+                                    <div className="overflow-hidden" style={{maxHeight: "50%"}}>
+                                        <img className="card-img-top flex-shrink-1 object-fit-cover" src={item.image}  alt="Card image cap" />
+
+                                    </div>
+                                    <div className="card-body d-flex flex-column h-50 gap-2 overflow-hidden" >
                                         <h5 className="flex-grow-1">{item.name}</h5>
                                         <p className="overflow-auto flex-shrink-1 d-sm-inline d-none">{item.message}</p>
                                     </div>
