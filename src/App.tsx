@@ -1,5 +1,3 @@
-import { useState } from 'react'
-
 import Navbar from './components/layout/Navbar'
 import Presentation from './components/Presentation'
 import Projects from './components/Projects'

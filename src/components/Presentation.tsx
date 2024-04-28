@@ -1,4 +1,5 @@
-import {scrollToSection} from "../../utils/scrollAnchor"
+import {scrollToSection} from "../utils/scrollAnchor"
+import photoOfMe from '../imgs/me.png'
 
 function Presentation() {
 
@@ -10,7 +11,7 @@ function Presentation() {
         </header>
         <div className="flex-grow-1  flex-shrink-1 flex-column flex-sm-row justify-content-center justify-content-sm-around d-flex gap-5 align-items-center" >
             <div className=" rounded-circle text-bg-yellow overflow-hidden border-yellow border border-5 border-light" style={{height: "225px", width: "225px"}}>
-                <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?cs=srgb&dl=pexels-simon-robben-55958-614810.jpg&fm=jpg" className="object-fit-cover w-100 h-100" alt="..."/>
+                <img src={photoOfMe} className="object-fit-cover w-100 h-100" alt="..."/>
 
             </div>
 
@@ -32,8 +33,8 @@ function Presentation() {
                 })}
             </span>
             <div className="my-2 btn-group flex-wrap d-flex gap-2 display-1 border border-white py-4 px-3 rounded-5 border-4" role="group" aria-label="Basic example">
-                <button type="button" className="btn btn-secondary p-3" onClick={() => scrollToSection('tecnologies')}>Tecnologias</button>
                 <button type="button" className="btn btn-secondary" onClick={() => scrollToSection('projects')}>Projetos</button>
+                <button type="button" className="btn btn-secondary p-3" onClick={() => scrollToSection('tecnologies')}>Tecnologias</button>
                 <button type="button" className="btn btn-secondary" onClick={() => scrollToSection('contact')}>Entrar em contato</button>
             </div>
         </footer>

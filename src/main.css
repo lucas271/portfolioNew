@@ -6,6 +6,11 @@
     animation: slide-out 0.5s forwards;
 }
 
+.addHoverZoom:hover{
+    transition: 0.6s;
+    transform: scale(115%);
+}
+
 .line_bellow::after{
     content: '';
     background-color: black;
@@ -36,14 +41,13 @@
     color: black;
 }
 
-@keyframes slide-in {
+
+@keyframes zoom {
     0%{
-        transform: translateX(-100%);
-        opacity: 0;
+      zoom: 0%;  
     }
     100%{
-        transform: translateX(0%);
-        opacity: 1;
+        zoom: 35%;
     }
 }
 
