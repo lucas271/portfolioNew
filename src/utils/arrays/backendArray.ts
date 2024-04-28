@@ -1,9 +1,9 @@
-const laravelImg = require('../../imgs/backend/laravel.png');
-const mongodbImg = require('../../imgs/backend/mongodb.png');
-const mysqlImg = require('../../imgs/backend/mysql.png');
-const nodeImg = require('../../imgs/backend/node.png');
-const postgresqlImg = require('../../imgs/backend/postgresql.png');
-const prismaImg = require('../../imgs/backend/prisma.png');
+import laravelImg from '/imgs/backend/laravel.png';
+import mongodbImg from '/imgs/backend/mongodb.png';
+import mysqlImg from '/imgs/backend/mysql.png';
+import nodeImg from '/imgs/backend/node.png';
+import postgresqlImg from '/imgs/backend/postgresql.png';
+import prismaImg from '/imgs/backend/prisma.png';
 
 const backendArray = [
     {

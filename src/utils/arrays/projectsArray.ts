@@ -1,8 +1,8 @@
-const chatApp = require('../../imgs/projects/chatApp.png');
-const nextStore = require('../../imgs/projects/nextStore.png');
-const nuxtStore = require('../../imgs/projects/nuxtStore.png');
+import chatApp from '../../imgs/projects/chatApp.png';
+import nextStore from '../../imgs/projects/nextStore.png';
+import nuxtStore from '../../imgs/projects/nuxtStore.png';
 
-const notesApp = require('../../imgs/projects/notesApp.png');
+import notesApp from '../../imgs/projects/notesApp.png';
 
 const projectsArray = [
     {
