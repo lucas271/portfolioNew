@@ -1,6 +1,5 @@
 import {scrollToSection} from "../utils/scrollAnchor"
-import photoOfMe from '../imgs/me.png'
-
+const photoOfMe = require('../imgs/me.png')
 function Presentation() {
 
     return (

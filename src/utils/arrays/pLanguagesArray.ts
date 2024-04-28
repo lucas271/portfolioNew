@@ -1,6 +1,6 @@
-import javascriptImg from '../../imgs/Planguages/javascript.png'
-import phpImg from '../../imgs/Planguages/php.png'
-import typescriptImg from '../../imgs/Planguages/typescript.png'
+const javascriptImg = require('../../imgs/Planguages/javascript.png');
+const phpImg = require('../../imgs/Planguages/php.png');
+const typescriptImg = require('../../imgs/Planguages/typescript.png');
 
 const pLanguagesArray = [
     {

@@ -29,11 +29,11 @@ function Contact() {
         }
 
         //it would be fine to define a function for boileirPlate state handling.
-        emailjs.send(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, {
+        emailjs.send(process.env.REACT_APP_SERVICE_ID || '', process.env.REACT_APP_TEMPLATE_ID || '', {
             from_name: data.name,
             message: data.message,
             email: data.email,
-        }, process.env.REACT_APP_CLIENT_ID).then(() => { 
+        }, process.env.REACT_APP_CLIENT_ID || '').then(() => { 
             setIsResponse(true)
             setIsSuccess(true)
             setIsLoading(false)

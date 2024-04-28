@@ -1,6 +1,14 @@
+
+//@ts-ignore
 import bootstrapImg from '../../imgs/styling/bootstrap.png';
+//@ts-ignore
+
 import sassImg from '../../imgs/styling/sass.png';
+//@ts-ignore
+
 import tailwindImg from '../../imgs/styling/tailwind.png';
+//@ts-ignore
+
 import vuetifyImg from '../../imgs/styling/vuetify.png';
 const stylesArray = [
     {

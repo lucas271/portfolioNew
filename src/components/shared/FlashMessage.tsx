@@ -7,7 +7,7 @@ interface flashInterface{
 }
 
 function FlashMessage({message, isSuccess=true, setIsResponse}: flashInterface) {
-    const ref = useRef(null)
+    const ref = useRef<null | HTMLElement>(null)
     const interval = setTimeout(() => {
         ref.current?.classList.add("slideOut")
         ref.current?.addEventListener("animationend", () => {

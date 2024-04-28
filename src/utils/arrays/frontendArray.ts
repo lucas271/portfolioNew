@@ -1,9 +1,9 @@
-import nextImg from '../../imgs/frontend/next.png';
-import nuxtImg from '../../imgs/frontend/nuxt.png';
-import piniaImg from '../../imgs/frontend/pinia.png';
-import reactImg from '../../imgs/frontend/react.png';
-import reduxImg from '../../imgs/frontend/redux.png';
-import vueImg from '../../imgs/frontend/vue.png';
+const nextImg = require('../../imgs/frontend/next.png');
+const nuxtImg = require('../../imgs/frontend/nuxt.png');
+const piniaImg = require('../../imgs/frontend/pinia.png');
+const reactImg = require('../../imgs/frontend/react.png');
+const reduxImg = require('../../imgs/frontend/redux.png');
+const vueImg = require('../../imgs/frontend/vue.png');
 
 
 const frontendArray = [
