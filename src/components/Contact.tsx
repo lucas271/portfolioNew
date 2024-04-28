@@ -5,7 +5,7 @@ import FlashMessage from './shared/FlashMessage';
 
 function Contact() {
     const [isResponse, setIsResponse] = useState<boolean>(false)
-    const [isSucess, setIsSuccess] =  useState<boolean>(false)
+    const [isSuccess, setIsSuccess] =  useState<boolean>(false)
     const [isLoading, setIsLoading] = useState<boolean>(false)
 
     interface emailForm{
@@ -37,8 +37,7 @@ function Contact() {
             setIsResponse(true)
             setIsSuccess(true)
             setIsLoading(false)
-        }).catch(err => {
-            console.log(err)
+        }).catch(() => {
             setIsResponse(true)
             setIsSuccess(false)
             setIsLoading(false)
@@ -75,7 +74,7 @@ function Contact() {
                 <p className="text-center">Você enviará um email para: lucasdev2124@gmail.com ao clicar em enviar</p>
             </footer>
         </div>
-        {isResponse && <FlashMessage setIsResponse={setIsResponse} message={isSucess ? "Mensagem enviada com sucesso" : "houve um erro no envio da mensagem"} isSuccess/>}
+        {isResponse && <FlashMessage setIsResponse={setIsResponse} message={isSuccess ? "Mensagem enviada com sucesso" : "houve um erro no envio da mensagem"} isSuccess={isSuccess}/>}
     </section>
 
     )
