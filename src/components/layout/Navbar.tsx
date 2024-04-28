@@ -16,7 +16,7 @@ function Navbar() {
 
     let options = {
       rootMargin: "0px",
-      threshold: 0.685,
+      threshold: 0.75,
     }
     let observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
