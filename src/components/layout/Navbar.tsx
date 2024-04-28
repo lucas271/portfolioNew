@@ -35,8 +35,10 @@ function Navbar() {
             elementToEdit?.classList.add('line_bellow')
           }else{
             const elementToEdit = document.querySelector(`#link_${entry.target.id}`)
-            elementToEdit?.classList.remove('line_bellow_fade_out')
-            elementToEdit?.classList.add('line_bellow_fade_out')
+            if(document.querySelectorAll('line_bellow').length > 0) {
+              elementToEdit?.classList.remove('line_bellow')
+              elementToEdit?.classList.add('line_bellow_fade_out')
+            }
           }
       });
   }, options);
