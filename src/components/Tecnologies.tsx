@@ -10,9 +10,9 @@ import CarouselItem from "./shared/CarouselItem"
 function Tecnologies() {
     
     return (
-    <section className="d-flex flex-column mx-auto gap-5 w-100 overflow-hidden m-0 p-0 d-flex justify-content-center align-items-center text-bg-dark" id="tecnologies">
+    <section className="d-flex flex-column mx-auto gap-5 w-100 overflow-hidden m-0 p-0 d-flex justify-content-center align-items-center text-bg-dark" id="tecnologies" >
 
-        <div className="container d-flex ga-5 flex-column" style={{maxHeight: "calc(90vh + 300px)"}}>
+        <div className="container d-flex ga-5 flex-column" style={{maxHeight: "calc(90vh + 300px)", minHeight: '75vh'}}>
             <header className="mt-5 text-center" style={{height: "fit-content"}}>
                 <ul className="nav nav-tabs gap-1 d-flex justify-content-center align-items-center" id="myTab" role="tablist">
                     <li className="nav-item" role="presentation">

@@ -45,8 +45,8 @@ function Contact() {
         })
     }
     return (
-    <section className="text-bg-primary" style={{height: 'fit-content'}} id="contact">
-        <div className="container h-100   d-flex flex-column gap-3 justify-content-center align-items-center">
+    <section className="text-bg-primary d-flex align-items-center" style={{height: 'fit-content', minHeight: '65vh'}} id="contact">
+        <div className="container  d-flex flex-column gap-3 justify-content-center align-items-center">
             <header className="mt-3">
                 <h2>Entre em contato!</h2>
 
