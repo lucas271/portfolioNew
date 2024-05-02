@@ -12,11 +12,9 @@ function Tecnologies() {
     return (
     <section className="d-flex flex-column mx-auto gap-5 w-100 overflow-hidden m-0 p-0 d-flex justify-content-center align-items-center text-bg-dark" id="tecnologies">
 
-        <div className="container d-flex ga-5 flex-column" style={{maxHeight: "calc(100vh - 56px)"}}>
-
-
-            <header className="my-5 text-center" style={{height: "fit-content"}}>
-                <ul className="nav nav-tabs" id="myTab" role="tablist">
+        <div className="container d-flex ga-5 flex-column" style={{maxHeight: "calc(90vh + 300px)"}}>
+            <header className="mt-5 text-center" style={{height: "fit-content"}}>
+                <ul className="nav nav-tabs gap-1 d-flex justify-content-center align-items-center" id="myTab" role="tablist">
                     <li className="nav-item" role="presentation">
                         <button className="nav-link active" id="language-tab" data-bs-toggle="tab" data-bs-target="#language-tab-pane" type="button" role="tab" aria-controls="language-tab-pane" aria-selected="true">Linguagens</button>
                     </li>
@@ -31,9 +29,9 @@ function Tecnologies() {
                     </li>
                 </ul>
             </header>
-            <div className="tab-content flex-grow-1 flex-shrink-1 my-5 h-100 w-100" id="myTabContent">
+            <div className="tab-content flex-grow-1 flex-shrink-1 overflow-hidden my-5 h-100 w-100" id="myTabContent">
                 <div className="tab-pane fade show active w-100 h-100" id="language-tab-pane" role="tabpanel" aria-labelledby="language-tab" tabIndex={0}>
-                    <div id="languages" className="carousel slide w-100 mx-auto d-flex overflow-hidden" >
+                    <div id="languages" className="carousel slide w-100 mx-auto h-100 d-flex overflow-hidden" >
                         <div className="carousel-indicators">
                             {pLanguagesArray.map((_item, index) => {
                                 return <button type="button" data-bs-target="#languages" data-bs-slide-to={index} className={index === 0 ? "active" : ''} aria-current={index === 0 && true} aria-label={"Slide " + index + 1} />
@@ -78,7 +76,7 @@ function Tecnologies() {
                     </div>  
                 </div>
                 <div className="tab-pane fade" id="style-tab-pane" role="tabpanel" aria-labelledby="style-tab" tabIndex={0}>
-                    <div id="styleCarousel" className="carousel slide w-100 mx-auto d-flex overflow-hidden" >
+                    <div id="styleCarousel" className="carousel slide w-100 d-flex justify-content-center mx-auto d-flex overflow-hidden" >
                         <div className="carousel-indicators">
                             {stylesArray.map((_item, index) => {
                                 return <button type="button" data-bs-target="#styleCarousel" data-bs-slide-to={index} className={index === 0 ? "active" : ''} aria-current={index === 0 && true} aria-label={"Slide " + index + 1} />
